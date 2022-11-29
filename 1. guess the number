@@ -1,0 +1,22 @@
+import random
+
+def stopigra():
+    print('До свидания!')
+
+
+def igra ():
+    print('хотите сыграть в игру? Y/N')
+    if input() != 'Y':
+        stopigra()
+    else:
+        quest = random.randint(1, 10)
+        a = int(input('Язагадал число от 1 до  10. Попробуй угадать! Введи свой вариант '))
+        if  1 > a > 10:
+            print('Вы ввели неверное число. Оно должно быт от 1 до 10')
+        else:
+            if a == quest:
+                print('Ты победил!!! Я тоже загадал ', quest)
+            else:
+                print('YOU LOOSE! Я загадал ', quest)
+    igra()
+igra()
