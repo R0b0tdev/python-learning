@@ -3,7 +3,6 @@ import random
 def stopigra():
     print('До свидания!')
 
-
 def igra ():
     print('хотите сыграть в игру? Y/N')
     if input() != 'Y':
